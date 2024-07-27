@@ -1,1 +1,2 @@
-# CafeteriaAgere
+# Café Agere
+## Coffee Shop
