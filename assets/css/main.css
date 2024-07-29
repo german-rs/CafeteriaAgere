@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #454545;
+  color: #000000;
 }
 
 .nav {
@@ -23,25 +23,71 @@ body {
   display: flex;
   flex-direction: row;
 }
-.header__image img {
+.header .image {
   width: 100%;
-  max-width: 900px;
+  max-width: 53.125rem;
+  position: relative;
 }
-.header__title {
-  width: 500px;
+.header .image img {
+  width: 100%;
+  max-width: 53.125rem;
+}
+.header .image__content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28.125rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  text-align: center;
+  background-color: #FFF;
+}
+.header .image__content .box {
+  width: 8.125rem;
+  height: 6.563rem;
+}
+.header .image__content .box__number {
+  font-family: "PT Mono", serif;
+  font-size: 2.5rem;
+}
+.header .title {
+  width: 31.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.header__title h1 {
+.header .title h1 {
   color: #000000;
   font-family: "PT Mono", serif;
   font-size: 4.375rem;
   font-weight: 400;
 }
-.header__title h2 {
+.header .title h2 {
   font-size: 1.875rem;
+}
+.header .title__box1 {
+  width: 6.563rem;
+  height: 6.563rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #F1DD7B;
+}
+.header .title__box2 {
+  width: 6.563rem;
+  height: 6.563rem;
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  background-color: #E4572E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
 }
 
 .contact {
@@ -50,9 +96,12 @@ body {
 }
 .contact__content {
   width: 100%;
-  max-width: 900px;
+  max-width: 810px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .contact__content .information {
   width: 300px;
@@ -62,20 +111,44 @@ body {
   font-size: 1.875rem;
   font-weight: 400;
 }
+.contact__content .map {
+  z-index: 1;
+}
 .contact__content .map img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  height: auto;
 }
-.contact__image img {
+.contact__content .box__blue {
+  width: 400px;
+  height: 200px;
+  background-color: #3C91E6;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.contact__image {
+  width: 430px;
+  position: relative;
+}
+.contact__image .image__main {
   width: 100%;
-  max-width: 500px;
+  max-width: 430px;
   height: 250px;
+}
+.contact__image .image__dos {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -10%;
 }
 
 .container {
   margin: 0 auto;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1280px;
 }
 
 .navbar {
