@@ -1,0 +1,36 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+
+    &__content{
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+
+        .information{
+            width: 300px;
+
+            &__title{
+                font-family: $font-secondary;
+                font-size: $font-size-x-large;
+                font-weight: 400;
+            }
+        }
+
+        .map{
+            img{
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+
+    &__image{
+        img{
+            width: 100%;
+            max-width: 500px;
+            height: 250px;
+        }
+    }
+}

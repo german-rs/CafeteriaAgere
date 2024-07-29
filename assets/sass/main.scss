@@ -6,8 +6,11 @@
 @import "base/typography";
 
 //Layout.
+@import "layout/nav";
 @import "layout/header";
+@import "layout/contact";
+@import "layout/container";
 
 //Component.
 @import "components/navbar";
-@import "components/buttos";
+@import "components/buttons";
