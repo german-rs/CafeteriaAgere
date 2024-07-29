@@ -1,0 +1,44 @@
+$padding: 5px;
+$padding-secondary: $padding + 1;
+$button-font-family: $font-secondary;
+$button-font-size: $nav-size-text;
+$timing-transition: 0.5s ease;
+
+.button{
+    width: 100%;
+    max-width: 12.5rem;
+    height: 3.125rem;
+    font-family: $button-font-family;
+    font-size: $nav-size-text;
+
+
+    &__primary{
+        flex: 1;
+        border: 1px solid $nav-color-text;
+        padding: $padding;
+        background-color: $white;
+        color: $nav-color-text;
+        transition: color $timing-transition, border $timing-transition;
+    
+        &:hover{
+            color: $nav-color-hover;
+            border: 1px solid $nav-color-hover;
+        }
+    }
+
+    &__secondary{
+        border: none;
+        padding: $padding-secondary;
+        background-color: $shiny-shamrock;
+        color: $white;
+        transition: color $timing-transition, background-color $timing-transition;
+    
+        &:hover{
+            color: $outher-space;
+            background-color: $turquoise-green;
+        }
+    }
+}
+
+
+

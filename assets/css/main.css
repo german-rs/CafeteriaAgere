@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #454545;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.header__image img {
+  width: 100%;
+  max-width: 900px;
+}
+.header__title {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title h1 {
+  color: #000000;
+  font-family: "PT Mono", serif;
+  font-size: 4.375rem;
+  font-weight: 400;
+}
+.header__title h2 {
+  font-size: 1.875rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.contact__content {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+}
+.contact__content .information {
+  width: 300px;
+}
+.contact__content .information__title {
+  font-family: "PT Mono", serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.contact__content .map img {
+  width: 100%;
+  max-width: 300px;
+}
+.contact__image img {
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__brand img {
+  max-width: 2rem;
+  width: 100%;
+}
+.navbar__link li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 1em;
+}
+.navbar__link a {
+  text-decoration: none;
+  font-family: "PT Mono", serif;
+  color: #989797;
+  font-size: 1.125rem;
+  transition: color 0.5s ease;
+}
+.navbar__link a:hover {
+  color: #454545;
+}
+.navbar__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  width: 100%;
+  max-width: 12.5rem;
+  height: 3.125rem;
+  font-family: "PT Mono", serif;
+  font-size: 1.125rem;
+}
+.button__primary {
+  flex: 1;
+  border: 1px solid #989797;
+  padding: 5px;
+  background-color: #FFF;
+  color: #989797;
+  transition: color 0.5s ease, border 0.5s ease;
+}
+.button__primary:hover {
+  color: #454545;
+  border: 1px solid #454545;
+}
+.button__secondary {
+  border: none;
+  padding: 6px;
+  background-color: #4CA866;
+  color: #FFF;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button__secondary:hover {
+  color: #454545;
+  background-color: #9DCFAB;
+}/*# sourceMappingURL=main.css.map */

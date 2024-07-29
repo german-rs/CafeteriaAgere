@@ -1,0 +1,44 @@
+$brand-image-max-width: 2rem;
+$brand-image-width: 100%;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+
+    &__brand {
+        img {
+            max-width: $brand-image-max-width;
+            width: $brand-image-width;
+        }
+    }
+
+    &__link {
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 0 1em;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: $font-secondary;
+            color: $nav-color-text;
+            font-size: $nav-size-text;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: $nav-color-hover;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
