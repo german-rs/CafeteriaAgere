@@ -2,35 +2,66 @@
     display: flex;
     flex-direction: row;
 
-    &__content{
+    &__content {
         width: 100%;
-        max-width: 900px;
+        max-width: 810px;
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
 
-        .information{
+        position: relative;
+
+        .information {
             width: 300px;
 
-            &__title{
+            &__title {
                 font-family: $font-secondary;
                 font-size: $font-size-x-large;
                 font-weight: 400;
             }
         }
 
-        .map{
-            img{
+        .map {
+            z-index: 1;
+
+            img {
                 width: 100%;
-                max-width: 300px;
+                max-width: 400px;
+                height: auto;
             }
+        }
+
+        .box__blue {
+            width: 400px;
+            height: 200px;
+            background-color: $blue-de-france;
+
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 
-    &__image{
-        img{
+    &__image {
+        width: 430px;
+        position: relative;
+
+        .image__main {
             width: 100%;
-            max-width: 500px;
+            max-width: 430px;
             height: 250px;
         }
+
+        .image__dos {
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: -10%;
+
+        }
+
     }
 }
