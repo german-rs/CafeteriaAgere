@@ -2,10 +2,9 @@ $brand-image-max-width: 2rem;
 $brand-image-width: 100%;
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+    @include flexbox(row, null, center, nowrap);
+    padding: 1rem 0;
+    gap: 1.25rem;
 
 
     &__brand {
@@ -36,9 +35,9 @@ $brand-image-width: 100%;
     }
 
     &__button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
+        width: 100%;
+        max-width: 21.875rem;
+        @include flexbox(row, null, center, null);
+        gap: 1.25rem;
     }
 }

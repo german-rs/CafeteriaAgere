@@ -6,14 +6,15 @@ $timing-transition: 0.5s ease;
 
 .button{
     width: 100%;
+    height: 100%;
     max-width: 12.5rem;
-    height: 3.125rem;
+    max-height: 2rem;
     font-family: $button-font-family;
     font-size: $nav-size-text;
+    word-break: break-all;
 
 
     &__primary{
-        flex: 1;
         border: 1px solid $nav-color-text;
         padding: $padding;
         background-color: $white;
