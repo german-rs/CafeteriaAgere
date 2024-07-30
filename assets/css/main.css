@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 1rem 0;
   gap: 1.25rem;
 }
@@ -143,7 +143,7 @@ body {
   gap: 1.25rem;
 }
 
-.button {
+.navbar__btn {
   width: 100%;
   height: 100%;
   max-width: 12.5rem;
@@ -152,25 +152,25 @@ body {
   font-size: 1rem;
   word-break: break-all;
 }
-.button__primary {
+.navbar__btn--primary {
   border: 1px solid #989797;
   padding: 5px;
   background-color: #FFF;
   color: #989797;
   transition: color 0.5s ease, border 0.5s ease;
 }
-.button__primary:hover {
+.navbar__btn--primary:hover {
   color: #454545;
   border: 1px solid #454545;
 }
-.button__secondary {
+.navbar__btn--secondary {
   border: none;
   padding: 6px;
   background-color: #4CA866;
   color: #FFF;
   transition: color 0.5s ease, background-color 0.5s ease;
 }
-.button__secondary:hover {
+.navbar__btn--secondary:hover {
   color: #454545;
   background-color: #9DCFAB;
 }
