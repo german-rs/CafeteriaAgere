@@ -1,0 +1,52 @@
+$gap: 0.625rem;
+$box-max-width: 8.125rem;
+$box-max-height: 6.563rem;
+$box-size: 6.563rem;
+$box-margin: 20px;
+$box-blue-max-width: 25em;
+$box-blue-max-height: 12.5em;
+
+.image__box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 28.125rem;
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+    text-align: center;
+    background-color: $white;
+
+    .box {
+        flex-shrink: 1;
+        width: 100%;
+        height: 100%;
+        max-width: $box-max-width;
+        max-height: $box-max-height;
+
+        &__number {
+            font-family: $font-secondary;
+            font-size: $font-size-xx-large;
+        }
+    }
+}
+
+.box__yellow {
+    @include box-styles($box-size, $box-size, absolute, 0, 0, auto, auto, $buff);
+}
+
+.box__orange {
+    @include box-styles($box-size, $box-size, absolute, -$box-margin, $box-margin, auto, auto, $flame);
+    @include flexbox(row, center, center);
+    color: $white;
+}
+
+.box__blue {
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+    max-width: $box-blue-max-width;
+    max-height: $box-blue-max-height;
+    @include box-styles(100%, 100%, absolute, auto, auto, 0, 0, $blue-de-france);
+}

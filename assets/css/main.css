@@ -32,31 +32,13 @@ body {
   width: 100%;
   max-width: 53.125rem;
 }
-.header .image__content {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 28.125rem;
-  display: flex;
-  flex-direction: row;
-  gap: 0.625rem;
-  text-align: center;
-  background-color: #FFF;
-}
-.header .image__content .box {
-  width: 8.125rem;
-  height: 6.563rem;
-}
-.header .image__content .box__number {
-  font-family: "PT Mono", serif;
-  font-size: 2.5rem;
-}
 .header .title {
   width: 31.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
 }
 .header .title h1 {
@@ -68,27 +50,6 @@ body {
 .header .title h2 {
   font-size: 1.875rem;
 }
-.header .title__box1 {
-  width: 6.563rem;
-  height: 6.563rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: #F1DD7B;
-}
-.header .title__box2 {
-  width: 6.563rem;
-  height: 6.563rem;
-  position: absolute;
-  left: -20px;
-  bottom: 20px;
-  background-color: #E4572E;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-}
 
 .contact {
   display: flex;
@@ -96,7 +57,8 @@ body {
 }
 .contact__content {
   width: 100%;
-  max-width: 810px;
+  height: auto;
+  max-width: 50.625rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,7 +66,9 @@ body {
   position: relative;
 }
 .contact__content .information {
-  width: 300px;
+  width: 18.6rem;
+  height: auto;
+  padding: 0 0.3rem;
 }
 .contact__content .information__title {
   font-family: "PT Mono", serif;
@@ -116,29 +80,21 @@ body {
 }
 .contact__content .map img {
   width: 100%;
-  max-width: 400px;
+  max-width: 24rem;
   height: auto;
 }
-.contact__content .box__blue {
-  width: 400px;
-  height: 200px;
-  background-color: #3C91E6;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 .contact__image {
-  width: 430px;
+  width: 26.875rem;
   position: relative;
 }
 .contact__image .image__main {
   width: 100%;
-  max-width: 430px;
-  height: 250px;
+  max-width: 26.875rem;
+  height: 15.625rem;
 }
-.contact__image .image__dos {
-  width: 100px;
-  height: 150px;
+.contact__image .image__secondary {
+  width: 6.25rem;
+  height: 9.375rem;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -148,14 +104,16 @@ body {
 .container {
   margin: 0 auto;
   width: 90%;
-  max-width: 1280px;
+  max-width: 80rem;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  gap: 1.25rem;
 }
 .navbar__brand img {
   max-width: 2rem;
@@ -170,28 +128,31 @@ body {
   text-decoration: none;
   font-family: "PT Mono", serif;
   color: #989797;
-  font-size: 1.125rem;
+  font-size: 1rem;
   transition: color 0.5s ease;
 }
 .navbar__link a:hover {
   color: #454545;
 }
 .navbar__button {
+  width: 100%;
+  max-width: 21.875rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .button {
   width: 100%;
+  height: 100%;
   max-width: 12.5rem;
-  height: 3.125rem;
+  max-height: 2rem;
   font-family: "PT Mono", serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  word-break: break-all;
 }
 .button__primary {
-  flex: 1;
   border: 1px solid #989797;
   padding: 5px;
   background-color: #FFF;
@@ -212,4 +173,72 @@ body {
 .button__secondary:hover {
   color: #454545;
   background-color: #9DCFAB;
+}
+
+.image__box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 28.125rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  text-align: center;
+  background-color: #FFF;
+}
+.image__box .box {
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 8.125rem;
+  max-height: 6.563rem;
+}
+.image__box .box__number {
+  font-family: "PT Mono", serif;
+  font-size: 2.5rem;
+}
+
+.box__yellow {
+  width: 6.563rem;
+  height: 6.563rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: auto;
+  right: auto;
+  background-color: #F1DD7B;
+}
+
+.box__orange {
+  width: 6.563rem;
+  height: 6.563rem;
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  top: auto;
+  right: auto;
+  background-color: #E4572E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+
+.box__blue {
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 25em;
+  max-height: 12.5em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: auto;
+  bottom: auto;
+  top: 0;
+  right: 0;
+  background-color: #3C91E6;
 }/*# sourceMappingURL=main.css.map */

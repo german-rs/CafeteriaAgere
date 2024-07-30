@@ -1,19 +1,29 @@
+$contact-max-width: 50.625rem;
+$information-width: 18.6rem;
+$information-padding: 0 0.3rem;
+$image-max-width: 26.875rem;
+$image-main-height: 15.625rem;
+$image-secondary-width: 6.25rem;
+$image-secondary-height: 9.375rem;
+$image-secondary-left: -10%;
+$map-max-width: 24rem;
+
 .contact {
     display: flex;
     flex-direction: row;
 
     &__content {
         width: 100%;
-        max-width: 810px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        height: auto;
+        max-width: $contact-max-width;
 
+        @include flexbox(row, center, center, null);
         position: relative;
 
         .information {
-            width: 300px;
+            width: $information-width;
+            height: auto;
+            padding: $information-padding;
 
             &__title {
                 font-family: $font-secondary;
@@ -27,41 +37,29 @@
 
             img {
                 width: 100%;
-                max-width: 400px;
+                max-width: $map-max-width;
                 height: auto;
             }
-        }
-
-        .box__blue {
-            width: 400px;
-            height: 200px;
-            background-color: $blue-de-france;
-
-            position: absolute;
-            top: 0;
-            right: 0;
         }
     }
 
     &__image {
-        width: 430px;
+        width: $image-max-width;
         position: relative;
 
         .image__main {
             width: 100%;
-            max-width: 430px;
-            height: 250px;
+            max-width: $image-max-width;
+            height: $image-main-height;
         }
 
-        .image__dos {
-            width: 100px;
-            height: 150px;
+        .image__secondary {
+            width: $image-secondary-width;
+            height: $image-secondary-height;
             position: absolute;
             z-index: 1;
             top: 0;
-            left: -10%;
-
+            left: $image-secondary-left;
         }
-
     }
 }
